@@ -1,0 +1,14 @@
+name: "Claire Liu"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "Experience"
+      href: experience.html
+    - icon: fa-envelope fa-lg
+      href: mailto:jl7322@cumc.columbia.edu
+    - icon: fa-github fa-lg
+      href: https://github.com/claireliu112
+output:
+  html_document:
+    theme: cerulean

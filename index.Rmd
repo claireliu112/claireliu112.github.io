@@ -6,7 +6,7 @@ title: "Claire Liu"
 
 Hi! I'm Claire Liu. Welcome to my personal website.
 
-I am an MPH student in Biostatistics at Columbia University Mailman School of Public Health, pursing certificate of Advanced epidemiology.
+I am an MPH student in Biostatistics at Columbia University Mailman School of Public Health, pursuing an Advanced Epidemiology certificate.
 
 I am currently a research assistant at Weill Cornell Medicine, where I work on a health equity project examining patient housing instability, healthcare access, and geographic patterns. I also serve as a teaching assistant for Statistical Computing with SAS at Columbia.
 
