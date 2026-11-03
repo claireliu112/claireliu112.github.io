@@ -1,0 +1,15 @@
+---
+title: "Claire Liu"
+---
+
+# Welcome
+
+Hi! I'm Claire Liu. Welcome to my personal website.
+
+I am an MPH student in Biostatistics at Columbia University Mailman School of Public Health, pursing certificate of Advanced epidemiology.
+
+I am currently a research assistant at Weill Cornell Medicine, where I work on a health equity project examining patient housing instability, healthcare access, and geographic patterns. I also serve as a teaching assistant for Statistical Computing with SAS at Columbia.
+
+My interests include biostatistics, epidemiology, public health data science, health equity, and health analysis related to physical exercise. I am especially interested in using statistical methods to better understand health disparities and support evidence-based public health research.
+
+

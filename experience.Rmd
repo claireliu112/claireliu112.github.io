@@ -1,0 +1,75 @@
+---
+title: "Experience"
+---
+
+# Education
+
+### Columbia University Mailman School of Public Health
+
+**Master of Public Health in Biostatistics**  
+September 2025 – Present
+
+Pursuing an Advanced Epidemiology Certificate. Coursework includes applied regression, categorical data analysis, statistical computing with SAS, epidemiology, and data science.
+
+### University of California, Santa Barbara
+
+**B.S. in Applied Mathematics**  
+**B.S. in Statistics and Data Science**  
+Sep 2021 – June 2025
+
+Completed interdisciplinary training in mathematics, statistics, and data science, with coursework in probability, regression analysis, stochastic processes, and experimental design.
+
+
+# Teaching Experience
+
+### Columbia University Mailman School of Public Health
+
+**Teaching Assistant, Statistical Computing with SAS**  
+September 2026 – Present
+
+Support students with SAS programming, statistical computing, and course material through instructional and course-related activities.
+
+
+# Research Experience
+
+### Weill Cornell Medicine
+
+**Research Assistant, Patient Housing Stability Mapping Project**  
+July 2026 – Present
+
+Contribute to a health equity research project examining geographic patterns of patient housing instability and healthcare access. Work includes data preparation, descriptive analysis, and geospatial analysis of patient- and area-level characteristics.
+
+
+### Columbia University Mailman School of Public Health
+
+**Tumor Mutational Burden, Stage, and Prognosis in Breast Cancer**  
+January 2026 – May 2026
+
+Analyzed clinical and survival data from the TCGA breast cancer cohort using SAS. The project included data cleaning, logistic regression, Kaplan–Meier analysis, Cox proportional hazards modeling, and sensitivity analyses.
+
+
+### University of California, Santa Barbara
+
+**Predictive Modeling of Mental Health Concerns Among Tech-Industry Employees**  
+March 2025 – June 2025
+
+Built and compared classification models in R using the OSMI Mental Health in Tech Survey. The project included data cleaning, exploratory analysis, preprocessing, cross-validation, and model evaluation.
+
+
+# Intern
+
+### Agricultural Bank of China
+
+**User Research & Development Intern**  
+July 2023 – August 2023
+
+Conducted research on investment-recommendation approaches for private banking and asset management. Contributed to customer-profiling frameworks, data requirements, and analytical planning for a recommendation-system proposal.
+
+
+# Technical Skills
+
+**Programming and Data Analysis:** R, SAS, Python, SQL  
+
+**Methods:** Statistical analysis, regression, survival analysis, predictive modeling, data visualization, geospatial analysis  
+
+**Languages:** Chinese (native), English (fluent)
