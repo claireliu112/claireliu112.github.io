@@ -1,0 +1,140 @@
+---
+title: "New York Central Park NOAA Weather Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plotly)
+library(flexdashboard)
+library(p8105.datasets)
+```
+
+```{r, include=FALSE}
+data("ny_noaa")
+
+central_park =
+  ny_noaa |>
+  filter(id == "USW00094728") |>
+  separate(
+    date,
+    into = c("year", "month", "day"),
+    convert = TRUE
+  ) |>
+  mutate(
+    tmax = as.numeric(tmax) / 10,
+    tmin = as.numeric(tmin) / 10,
+    snow = as.numeric(snow)
+  )
+```
+
+Column {data-width=550}
+----------------------------
+
+### Daily Maximum vs Minimum Temperature
+
+Daily minimum and maximum temperatures recorded at Central Park from 1981 to 2010.
+
+```{r, echo=FALSE}
+central_park |>
+  filter(
+    !is.na(tmax),
+    !is.na(tmin)
+  ) |>
+  mutate(
+    text_label = str_c(
+      "Date: ", year, "-", month, "-", day,
+      "\nMinimum: ", tmin, "°C",
+      "\nMaximum: ", tmax, "°C"
+    )
+  ) |>
+  plot_ly(
+    x = ~tmin,
+    y = ~tmax,
+    color = ~year,
+    colors = "viridis",
+    type = "scatter",
+    mode = "markers",
+    text = ~text_label,
+    alpha = 0.5
+  ) |>
+  layout(
+    xaxis = list(title = "Minimum Temperature (°C)"),
+    yaxis = list(title = "Maximum Temperature (°C)"),
+    margin = list(b = 100)
+  )
+```
+
+
+
+Column {data-width=450}
+----------------------------
+
+### Maximum Temperature by Month
+
+Distribution of daily maximum temperatures at Central Park across months from 1981 to 2010.
+
+```{r, echo=FALSE}
+central_park |>
+  filter(!is.na(tmax)) |>
+  mutate(
+    month = factor(
+      month,
+      levels = 1:12,
+      labels = month.abb
+    )
+  ) |>
+  plot_ly(
+    x = ~month,
+    y = ~tmax,
+    type = "box"
+  ) |>
+  layout(
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Maximum Temperature (°C)"),
+    margin = list(b = 100)
+  )
+```
+
+
+
+### Snow Days by Month
+
+Total number of days with recorded snowfall at Central Park by month from 1981 to 2010.
+
+```{r, echo=FALSE}
+central_park |>
+  filter(
+    !is.na(snow),
+    snow > 0
+  ) |>
+  count(month) |>
+  mutate(
+    month = factor(
+      month,
+      levels = 1:12,
+      labels = month.abb
+    )
+  ) |>
+  plot_ly(
+    x = ~month,
+    y = ~n,
+    type = "bar"
+  ) |>
+  layout(
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Number of Snow Days"),
+    margin = list(b = 100)
+  )
+```
+
+
+
+
+
+
+
+
